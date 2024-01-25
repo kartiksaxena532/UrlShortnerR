@@ -1,8 +1,9 @@
 const express = require ("express");
-const {handleGenerateUrl}=require("../controllers/url");
+const {handleGenerateNewUrl}=require("../controllers/url");
+
 const router = express.Router();
 
-router.post("/",handleGenerateUrl);
+router.post("/",handleGenerateNewUrl);
 
 
 module.exports = router;
